@@ -44,6 +44,40 @@ This provides a standalone command:
 case_cli_example output.rdf
 ```
 
+## Contributions
+
+### NIST
+- Original template and base functionality
+- Testing framework and CI/CD setup
+- Documentation and licensing
+
+### github.com/vulnmaster
+- Added passive DNS record processing functionality to `cli.py`:
+  - CSV data ingestion and parsing
+  - CASE/UCO object and relationship creation
+  - Property mappings and validation
+  - Example data files in `/data` directory
+
+The tool now includes functionality to process passive DNS records and convert them to CASE/UCO format:
+
+```bash
+# Process DNS records and validate output
+python case_cli_example/cli.py data/output.jsonld --dns-csv data/domain-ip-res.csv --validate
+```
+
+The tool demonstrates:
+- Reading passive DNS records from CSV (`data/domain-ip-res.csv`)
+- Creating CASE/UCO compliant objects with proper facets (DomainName, IPv4Address)
+- Establishing relationships between domain names and IP addresses
+- Handling temporal data (observation times)
+- Following mappings defined in `data/mappings.md`
+- Validating output against CASE ontology
+
+Example data files:
+- `data/domain-ip-res.csv` - Source CSV containing passive DNS records
+- `data/mappings.md` - Documents how CSV columns map to CASE/UCO properties
+- `data/output.jsonld` - Generated CASE/UCO compliant JSON-LD output
+
 The tests build several examples of output for the command line mode, under [`tests/cli`](tests/cli/).
 
 The installation also provides a package to import:

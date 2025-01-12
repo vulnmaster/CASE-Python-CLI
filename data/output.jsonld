@@ -1,0 +1,849 @@
+{
+  "@context": {
+    "uco-core": "https://ontology.unifiedcyberontology.org/uco/core/",
+    "uco-observable": "https://ontology.unifiedcyberontology.org/uco/observable/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://example.org/kb/Relationship-304cd74d-04bb-4c54-934b-26d093490d3f",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-d69f9e70-e4a4-4c0e-a3df-458eec679441"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-619c6ccd-287b-4751-a998-cafc063d800b"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-ded21bef-571b-4c76-998d-f75486bada02",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "admin.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-077ea74d-1a63-4c0b-870a-b4e17d03ea2d",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-14fbd3ad-f131-4e51-a04a-17bac94c5edf"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-3e07dd12-09ba-4505-8578-329a9c2729ef"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-3ef214dc-96c6-4e68-beb6-e3ae6fc49dfe",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "backup.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-92212436-513e-46a6-8c66-7680210356d0",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.7.150"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-a64ad286-661f-4dd3-b586-34b976b062b3",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "mail.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-8f0e9bcb-f224-4785-b7bd-46a514738356",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-c3d8d8f3-c98e-4e9c-b26a-99fcc1d51a5b"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-4f218f96-0d1a-4f16-852f-ec807866fd88"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T12:45:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-93821b6e-e50f-48b7-8ee0-afe37d40073d",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-65cc498d-b5d2-4635-887d-eb9490683669"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-b43b8da0-66f7-46e8-91a2-3f2e90df74af"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-07793f7b-9172-45bd-8a5f-97cf3f614dce",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-94df955a-80c9-4fb8-a9d0-9b2176d6e314"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-92212436-513e-46a6-8c66-7680210356d0"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-7dd2dfad-4c50-4e3e-8073-364da78fb2ba",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.15.30"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-65cc498d-b5d2-4635-887d-eb9490683669",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "cdn.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-f7aa8949-c6f4-4ad1-a8bc-db5118d759be",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-bbd5a80b-4578-4a54-ab97-035cb7cfff90"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-c75bbe5f-3271-45d5-b28a-ebaf9a55ca77"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T14:30:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-c3d673d9-139a-4398-97e1-480f3d8dda5b",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-c3d8d8f3-c98e-4e9c-b26a-99fcc1d51a5b"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-4f218f96-0d1a-4f16-852f-ec807866fd88"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-f9108d85-025c-4c3c-9973-6a9ea94e70b5",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-a64ad286-661f-4dd3-b586-34b976b062b3"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-aeff2ec6-7f5f-49a5-9023-576b4a57c87a"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T10:15:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-17cf2b92-3695-4b1a-8cb2-cb16dac16ea6",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.17.140"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-d706a680-ae6e-4011-b473-09f73b844987",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.16.175"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-2c91990f-692c-46ee-b3ce-bfb12e167ef6",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "api.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-151b7667-c980-477c-876c-aa4f975b7100",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-8ad8fe82-6e8c-46f8-9313-ec38c0679a39"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-17cf2b92-3695-4b1a-8cb2-cb16dac16ea6"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T14:15:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-611282c8-9bea-4f07-9976-e20d81b34aee",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-94df955a-80c9-4fb8-a9d0-9b2176d6e314"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-92212436-513e-46a6-8c66-7680210356d0"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T11:45:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-0cbd5acb-d69a-4a99-84d5-3fb3894311fc",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-bbd5a80b-4578-4a54-ab97-035cb7cfff90"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-c75bbe5f-3271-45d5-b28a-ebaf9a55ca77"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-cef3b432-1110-4812-bca6-49df9765aae8",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-286849e0-1e88-414d-8163-1db74a53170b"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-16d08bad-e5c1-4f16-a653-b4b62cdb50b8"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T10:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-50dabee7-f5f6-4070-9e57-1493e23218a5",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-a64ad286-661f-4dd3-b586-34b976b062b3"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-aeff2ec6-7f5f-49a5-9023-576b4a57c87a"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-d1f83786-8e96-4680-b5f4-012d7b8e886c",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "dev.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-3e07dd12-09ba-4505-8578-329a9c2729ef",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.20.125"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-e5564c4a-8be2-47bc-bdcb-6c8785dd8c5f",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "staging.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-94df955a-80c9-4fb8-a9d0-9b2176d6e314",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "test.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-defa4a97-2745-4e5c-9bf9-5aea11266666",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.6.200"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-43baf4fb-8797-4433-a64a-d3864ea367e3",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-789dcfe7-9562-4483-9c9d-8db4d0ce0e3f"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-4f7a417f-8d93-438b-8a75-7b858572611f"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T13:15:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-1979a9b4-17ee-475d-bb16-2a367b9a1c77",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-472ca367-8780-44a0-b1e6-f65680b61c43"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-7dd2dfad-4c50-4e3e-8073-364da78fb2ba"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-ddc51d6d-4321-435f-80f0-441b410c605b",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-9c444401-578c-4d43-8477-bb675c2e7580"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-ac9c8fb6-6ae1-4607-ae3a-2879ce11cc57"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T10:45:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-14fbd3ad-f131-4e51-a04a-17bac94c5edf",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "analytics.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-c2583a69-b5f6-40bb-b368-6a44f3b9b3eb",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "db.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-7534a5a0-fdbb-4bd4-b534-4afc470c72e3",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-286849e0-1e88-414d-8163-1db74a53170b"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-16d08bad-e5c1-4f16-a653-b4b62cdb50b8"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-e715133f-6099-4604-a478-eb2fc7d9b715",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-f6a9add2-4dce-45fc-a876-c2cb3ae2e129"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-58036579-4e70-4139-ac94-1d72db9ff117"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T10:30:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-16d08bad-e5c1-4f16-a653-b4b62cdb50b8",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.1.1"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-d8192abf-7782-4527-ab4e-08f7494be5e1",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-d1f83786-8e96-4680-b5f4-012d7b8e886c"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-4674d63b-7eb1-4b3a-a44a-e26c1d6349b0"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-459749b7-2706-423e-86c1-48d30d27f383",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-3ef214dc-96c6-4e68-beb6-e3ae6fc49dfe"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-d706a680-ae6e-4011-b473-09f73b844987"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T14:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-a496aae3-e301-4056-b6c1-6e373185dff5",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.12.160"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-c81486f8-b75d-44cf-ae74-343750c9d1a9",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-9c444401-578c-4d43-8477-bb675c2e7580"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-ac9c8fb6-6ae1-4607-ae3a-2879ce11cc57"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-90b02d65-7258-49e2-95af-7a37163dc4d9",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-789dcfe7-9562-4483-9c9d-8db4d0ce0e3f"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-4f7a417f-8d93-438b-8a75-7b858572611f"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-aeff2ec6-7f5f-49a5-9023-576b4a57c87a",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.1.100"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-272fc39a-54da-43af-aa77-1af462e1089d",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-2c91990f-692c-46ee-b3ce-bfb12e167ef6"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-593e9e9f-a57b-4113-aa89-33514e7184dd"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T11:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-9c444401-578c-4d43-8477-bb675c2e7580",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "store.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-29dfbb20-e26a-449e-95ce-c5b307d88f53",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-d1f83786-8e96-4680-b5f4-012d7b8e886c"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-4674d63b-7eb1-4b3a-a44a-e26c1d6349b0"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T11:15:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-c4e9097e-4ad1-4613-b682-aa7ea911b5cb",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-de11759e-ddfb-42b2-aefd-ad886d514da3"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-1c8a613d-f840-4dd6-ad67-d4c6e381c399"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T13:30:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-adc4072b-4ea6-48e9-9854-8d75d4ce567d",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-e5564c4a-8be2-47bc-bdcb-6c8785dd8c5f"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-defa4a97-2745-4e5c-9bf9-5aea11266666"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T11:30:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-153df9d8-b3ff-4f50-9405-1870fb84ccfa",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.10.120"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-d98549a2-6df0-4a69-b57b-ccf346a9b0f2",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-c2583a69-b5f6-40bb-b368-6a44f3b9b3eb"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-153df9d8-b3ff-4f50-9405-1870fb84ccfa"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-2df0d851-d297-4a27-9c34-566ab2bcf506",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-2c91990f-692c-46ee-b3ce-bfb12e167ef6"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-593e9e9f-a57b-4113-aa89-33514e7184dd"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-c3d8d8f3-c98e-4e9c-b26a-99fcc1d51a5b",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "auth.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-123d5ea5-4147-48f6-945e-139d9830a4f5",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-de11759e-ddfb-42b2-aefd-ad886d514da3"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-1c8a613d-f840-4dd6-ad67-d4c6e381c399"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-13033de3-be51-467c-8cfb-04f9daf1d929",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-14fbd3ad-f131-4e51-a04a-17bac94c5edf"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-3e07dd12-09ba-4505-8578-329a9c2729ef"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T15:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-f6e18011-7f54-4032-8448-7707cd9297dc",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "metrics.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-2585cfcf-af02-4f16-9b1c-6ad3481ff3fa",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-65cc498d-b5d2-4635-887d-eb9490683669"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-b43b8da0-66f7-46e8-91a2-3f2e90df74af"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T12:15:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-7a8592c2-7997-49f1-a7b3-94ae6a85d396",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-f6a9add2-4dce-45fc-a876-c2cb3ae2e129"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-58036579-4e70-4139-ac94-1d72db9ff117"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-c75bbe5f-3271-45d5-b28a-ebaf9a55ca77",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.18.55"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-f6a7d3e1-c6ba-434a-a910-5cb2991ac791",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-ded21bef-571b-4c76-998d-f75486bada02"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-2c87afd0-f16a-489d-bf43-8282ea2da79c"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T12:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-619c6ccd-287b-4751-a998-cafc063d800b",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.19.210"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-d69f9e70-e4a4-4c0e-a3df-458eec679441",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "gateway.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-1c8a613d-f840-4dd6-ad67-d4c6e381c399",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.14.220"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-593e9e9f-a57b-4113-aa89-33514e7184dd",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.4.10"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-f6a9add2-4dce-45fc-a876-c2cb3ae2e129",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "blog.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-31c98e52-1105-417a-9991-c309cf3e1ca6",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-3ef214dc-96c6-4e68-beb6-e3ae6fc49dfe"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-d706a680-ae6e-4011-b473-09f73b844987"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-de11759e-ddfb-42b2-aefd-ad886d514da3",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "cache.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-1e3433c2-d201-447f-855b-e9ea1c748d36",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-d69f9e70-e4a4-4c0e-a3df-458eec679441"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-619c6ccd-287b-4751-a998-cafc063d800b"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T14:45:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-789dcfe7-9562-4483-9c9d-8db4d0ce0e3f",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "logs.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-6d1ed280-f55c-4256-aaa6-0b28b82324ca",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-e5564c4a-8be2-47bc-bdcb-6c8785dd8c5f"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-defa4a97-2745-4e5c-9bf9-5aea11266666"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-3dacbf0e-3de3-47a3-90d8-7709fe56a82f",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-f6e18011-7f54-4032-8448-7707cd9297dc"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-a496aae3-e301-4056-b6c1-6e373185dff5"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T13:00:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-4f218f96-0d1a-4f16-852f-ec807866fd88",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.11.85"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-2c87afd0-f16a-489d-bf43-8282ea2da79c",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.8.90"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-bbd5a80b-4578-4a54-ab97-035cb7cfff90",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "proxy.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-286849e0-1e88-414d-8163-1db74a53170b",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-b43b8da0-66f7-46e8-91a2-3f2e90df74af",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.9.45"
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-022bf4ce-32e8-453d-9252-545ccb2e7d30",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-472ca367-8780-44a0-b1e6-f65680b61c43"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-7dd2dfad-4c50-4e3e-8073-364da78fb2ba"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T13:45:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-4674d63b-7eb1-4b3a-a44a-e26c1d6349b0",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.5.75"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-4f7a417f-8d93-438b-8a75-7b858572611f",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.13.95"
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-472ca367-8780-44a0-b1e6-f65680b61c43",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "search.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-58036579-4e70-4139-ac94-1d72db9ff117",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.2.50"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-caa8d83e-b825-40e5-a262-90a0de2828ed",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-ded21bef-571b-4c76-998d-f75486bada02"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-2c87afd0-f16a-489d-bf43-8282ea2da79c"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DNSRecord-69447181-c030-45a2-98e2-80fa641d7031",
+      "@type": "uco-observable:DNSRecord",
+      "uco-core:hasFacet": [
+        {
+          "@id": "http://example.org/kb/DomainNameFacet-c2583a69-b5f6-40bb-b368-6a44f3b9b3eb"
+        },
+        {
+          "@id": "http://example.org/kb/IPv4AddressFacet-153df9d8-b3ff-4f50-9405-1870fb84ccfa"
+        }
+      ],
+      "uco-core:observationTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-12-01T12:30:00+00:00"
+      },
+      "uco-observable:isPassiveDNS": true,
+      "uco-observable:recordType": "A"
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-24aa2499-5b64-4d8a-a551-3c6d86a67d3e",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-f6e18011-7f54-4032-8448-7707cd9297dc"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-a496aae3-e301-4056-b6c1-6e373185dff5"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/Relationship-d680165e-f51c-4f84-8c4b-0a22aef16d8c",
+      "@type": "uco-core:Relationship",
+      "uco-core:isDirectional": true,
+      "uco-core:kindOfRelationship": "Resolved_To",
+      "uco-core:source": {
+        "@id": "http://example.org/kb/DomainNameFacet-8ad8fe82-6e8c-46f8-9313-ec38c0679a39"
+      },
+      "uco-core:target": {
+        "@id": "http://example.org/kb/IPv4AddressFacet-17cf2b92-3695-4b1a-8cb2-cb16dac16ea6"
+      }
+    },
+    {
+      "@id": "http://example.org/kb/DomainNameFacet-8ad8fe82-6e8c-46f8-9313-ec38c0679a39",
+      "@type": "uco-observable:DomainNameFacet",
+      "uco-observable:value": "monitor.example.org"
+    },
+    {
+      "@id": "http://example.org/kb/IPv4AddressFacet-ac9c8fb6-6ae1-4607-ae3a-2879ce11cc57",
+      "@type": "uco-observable:IPv4AddressFacet",
+      "uco-observable:addressValue": "192.168.3.25"
+    }
+  ]
+}
